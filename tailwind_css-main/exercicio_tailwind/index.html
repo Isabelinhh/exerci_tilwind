@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Formulário de Login</title>
+</head>
+
+<body class="bg-[url('https://source.unsplash.com/1920x1080/?montanha')] bg-cover bg-center min-h-screen">
+
+    <main class="flex items-center justify-center min-h-screen">
+        <form class="flex flex-col items-center bg-white p-8 rounded-2xl shadow-lg">
+
+            <h1 class="text-3xl font-semibold text-gray-800">
+                Bem-vindo(a)
+            </h1>
+
+            <h2 class="text-sm text-gray-500 mt-1">
+                Insira seus dados de acesso
+            </h2>
+
+            <div class="w-64 flex flex-col mt-4 relative">
+
+                <!-- Email -->
+                <label for="email" class="text-gray-800 font-semibold mb-1">
+                    E-mail
+                </label>
+
+                <i class="bx bxs-user absolute left-2 top-[38px] text-gray-400 text-lg"></i>
+
+                <input type="email" id="email" placeholder="Seu email:" autocomplete="off"
+                    class="w-full border border-gray-300 rounded px-8 py-2 text-sm placeholder:text-gray-400 focus:border-blue-500 focus:outline-none mb-3">
+
+                <!-- Senha -->
+                <label for="password" class="text-gray-800 font-semibold mb-1">
+                    Senha
+                </label>
+
+                <i class="bx bxs-key absolute left-2 top-[108px] text-gray-400 text-lg"></i>
+
+                <input type="password" id="password" placeholder="Sua senha:"
+                    class="w-full border border-gray-300 rounded px-8 py-2 text-sm placeholder:text-gray-400 focus:border-blue-500 focus:outline-none">
+
+                <!-- Esqueceu -->
+                <a class="text-blue-600 hover:text-blue-800 cursor-pointer my-4 text-sm">
+                    Esqueceu a senha?
+                </a>
+
+                <!-- Botão -->
+                <input type="submit" value="Login"
+                    class="w-full rounded font-semibold text-white py-2 cursor-pointer bg-gradient-to-r from-blue-600 to-blue-400 hover:opacity-90 transition">
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
